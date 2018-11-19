@@ -4,6 +4,8 @@ import pickle
 import re
 from tensorflow.python.ops import math_ops
 
+# https://nbviewer.jupyter.org/github/owen-carter/movie_recommender/blob/master/movie_recommender.ipynb
+
 users_title = ['UserID', 'Gender', 'Age', 'OccupationID', 'Zip-code']
 users = pd.read_table('./ml-1m/users.dat', sep='::', header=None, names=users_title, engine='python')
 users.head()
